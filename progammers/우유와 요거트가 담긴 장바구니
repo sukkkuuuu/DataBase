@@ -1,0 +1,12 @@
+### 우유와 요거트가 담긴 장바구니
+
+🔒 [문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/62284)
+
+```SQL
+SELECT CART_ID
+FROM CART_PRODUCTS
+WHERE NAME = "Yogurt" AND CART_ID IN(SELECT CART_ID
+                                    FROM CART_PRODUCTS
+                                    WHERE NAME = "Milk");
+
+------
