@@ -1,0 +1,13 @@
+### 오랜 기간 보호한 동물(2)
+
+🔒 [문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/59411)
+
+```SQL
+SELECT AI.ANIMAL_ID, AI.NAME
+FROM ANIMAL_INS AI, ANIMAL_OUTS AO
+WHERE AI.ANIMAL_ID = AO.ANIMAL_ID AND AI.ANIMAL_ID IN (SELECT ANIMAL_ID
+                                                      FROM ANIMAL_OUTS)
+ORDER BY AI.DATETIME - AO.DATETIME
+LIMIT 2;
+
+------
