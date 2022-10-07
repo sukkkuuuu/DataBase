@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F04979DD-9F5A-0CEE-4ACF-B3537EA65494" name="subject">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-05 12:56:32 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="classId" id="86CBF1DE-6016-D34A-EB80-38DCA8D7E188">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 08:53:37 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>56DA70DC-0590-2EBD-AEF6-CE21D91334B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="7DDDD4E1-74EE-5CC8-4392-85DB3AC8DF1F">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 05:49:29 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="learntime" id="60C5BA21-66BF-5C14-3ED4-B1B00ED37127">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-05 12:58:52 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AssistandId" id="3039FD22-0C35-E33A-6819-50E32A841433">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 06:21:55 UTC</createdTime>
+<generatorID>4029A584-2722-5067-C881-D294F98F972E</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<referedAttribute>83F6C762-193F-46D9-8668-0BBAFB66E092</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pId" id="382BDEFA-04E4-328B-5D85-434A55DF3929">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 08:51:24 UTC</createdTime>
+<generatorID>0E4419D3-69D3-3CA8-08AF-9987EDA38FA8</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<referedAttribute>43538016-F2CC-3D2E-1583-405C260C4B9E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F0CA107-E7F0-A5D6-C111-FF4FAE4DA833" name="subject PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 05:49:34 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7DDDD4E1-74EE-5CC8-4392-85DB3AC8DF1F</attributeRef>
+<attributeRef>86CBF1DE-6016-D34A-EB80-38DCA8D7E188</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

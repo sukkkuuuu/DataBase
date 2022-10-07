@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6053565-6F05-B28D-5324-99B25239FE3E" name="professor_of_subject">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="professor_id" id="2D16F953-4946-AA92-CF90-12BCEACB8DBC">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="367A3376-C6AC-C303-72E3-41BE48C89C75" referredColumn="349A012C-52FB-BD45-E46E-F86B8250D76C"/>
+</associations>
+</Column>
+<Column name="subject_name" id="2EDF711D-DC6F-E252-5E26-FABCBED36F13">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1E48365-37DA-7E90-E1ED-B4F0002FB2FB" referredColumn="24622534-6BD2-AB65-B49E-1AE3D0C92181"/>
+</associations>
+</Column>
+<Column name="subject_classId" id="801B66F1-BE45-9301-B78C-FF2724909394">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>56DA70DC-0590-2EBD-AEF6-CE21D91334B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1E48365-37DA-7E90-E1ED-B4F0002FB2FB" referredColumn="C8D28F03-343D-75D2-9838-A9DA7AE06D6E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3AFC9655-D0E5-173C-5413-CFB9D1B2C1A1" name="professor_of_subject_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D16F953-4946-AA92-CF90-12BCEACB8DBC"/>
+<colUsage columnID="2EDF711D-DC6F-E252-5E26-FABCBED36F13"/>
+<colUsage columnID="801B66F1-BE45-9301-B78C-FF2724909394"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55962291-7978-D819-9C85-DF9C85E74C33" name="professor_of_subject_professor_FK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<generatorID>670815AC-1FB6-0911-D7A9-186B16FBF473</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D16F953-4946-AA92-CF90-12BCEACB8DBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF4B4C5D-3D7D-877C-5CF0-EF6BD9902483" name="professor_of_subject_subject_FK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<generatorID>670815AC-1FB6-0911-D7A9-186B16FBF473</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EDF711D-DC6F-E252-5E26-FABCBED36F13"/>
+<colUsage columnID="801B66F1-BE45-9301-B78C-FF2724909394"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1DC949C3-558F-E71E-1CE3-78039E24411A" name="dean">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<generatorID>44ABA148-2F0E-739C-4EC7-94E9B9D15AC0</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="deanId" id="2711EB84-3B1E-A857-8B7B-A0189EAD847D">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<generatorID>30E0CBFA-C20A-1926-539B-5D23783DA8E7</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C359343-4696-6F69-4528-A2BEC3335581" referredColumn="349A012C-52FB-BD45-E46E-F86B8250D76C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CF40704-DB41-712E-62B8-FF3C1E310648" name="dean_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<generatorID>EE73B38E-4516-568B-D5DD-EB000B82DCC5</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2711EB84-3B1E-A857-8B7B-A0189EAD847D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4859A09F-19EB-CABC-B078-EF4DDCE93113" name="professor_of_dean">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 14:06:31 UTC</createdTime>
+<generatorID>FEFF9AD4-FD85-79B1-4A4C-1F8C1017150B</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2711EB84-3B1E-A857-8B7B-A0189EAD847D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
