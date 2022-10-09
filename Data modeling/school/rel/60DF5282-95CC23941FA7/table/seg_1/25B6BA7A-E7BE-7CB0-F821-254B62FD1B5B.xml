@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="25B6BA7A-E7BE-7CB0-F821-254B62FD1B5B" name="class">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SName" id="CABE9A5A-4681-B6BF-BF87-1BAA0D0CAD03">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A98A2B2-858E-5CD7-423A-951E819A89A0" referredColumn="64D4028E-113C-BFBA-1B68-2D7080E4BE7E"/>
+</associations>
+</Column>
+<Column name="SclassId" id="58D949A0-5B5F-D0A2-251A-B63F8498B8DC">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>56DA70DC-0590-2EBD-AEF6-CE21D91334B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A98A2B2-858E-5CD7-423A-951E819A89A0" referredColumn="C5FD09FD-D82A-4363-B986-745988C4C446"/>
+</associations>
+</Column>
+<Column name="CNo" id="F855CD52-F6DB-B6AA-CD55-E8D0FA7E8661">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8C3E242-B9F3-2A06-1841-9F3F2FB8654D" referredColumn="B45BD773-E9BD-686F-E2AA-07DEBB4383B9"/>
+</associations>
+</Column>
+<Column name="CName" id="3EFF2E57-78F1-2D53-5110-35C002D1671A">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8C3E242-B9F3-2A06-1841-9F3F2FB8654D" referredColumn="003D093E-0F99-67A6-EE1C-218D143B1B4D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="586EB1CC-A356-A9C5-9348-A2F547B38310" name="class_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CABE9A5A-4681-B6BF-BF87-1BAA0D0CAD03"/>
+<colUsage columnID="58D949A0-5B5F-D0A2-251A-B63F8498B8DC"/>
+<colUsage columnID="F855CD52-F6DB-B6AA-CD55-E8D0FA7E8661"/>
+<colUsage columnID="3EFF2E57-78F1-2D53-5110-35C002D1671A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94D00A09-00F6-CACC-E3A1-187FC8B76BF5" name="class_subject_FK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>D50ADD42-7F73-CE85-01B5-3033804BCEF7</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CABE9A5A-4681-B6BF-BF87-1BAA0D0CAD03"/>
+<colUsage columnID="58D949A0-5B5F-D0A2-251A-B63F8498B8DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E54CFBB7-A0C1-EDC7-2574-1EB0BEA7EF5C" name="class_classroom_FK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>D50ADD42-7F73-CE85-01B5-3033804BCEF7</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F855CD52-F6DB-B6AA-CD55-E8D0FA7E8661"/>
+<colUsage columnID="3EFF2E57-78F1-2D53-5110-35C002D1671A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

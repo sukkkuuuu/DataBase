@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="professor_of_dean" directorySegmentName="seg_0" id="FEFF9AD4-FD85-79B1-4A4C-1F8C1017150B">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-06 12:57:01 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<sourcePk>7341E3D2-CE1F-5EFD-F2C6-9FD3CF9FD492</sourcePk>
+<dominantRole>C498E092-D398-6B56-5DB7-F36D8514A1E2</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C498E092-D398-6B56-5DB7-F36D8514A1E2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>44ABA148-2F0E-739C-4EC7-94E9B9D15AC0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="designation" id="00BB2961-1E42-6A1A-75FB-80936B92800B">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 01:25:08 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<engineerTo>
+<item key="60DF5282-BA1D-0D13-A8D6-95CC23941FA7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>067B48BB-2F68-26EE-7323-AC32C29EE957</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

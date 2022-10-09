@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="BBFEA2F7-E425-A13B-9F2B-A4E7B75C1CBF" name="dean">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>44ABA148-2F0E-739C-4EC7-94E9B9D15AC0</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="71D31AF5-AA8E-F6C2-F393-2B7B1943EB0B">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>30E0CBFA-C20A-1926-539B-5D23783DA8E7</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B3224B2-251E-9CD9-5E96-7738AAF0ADBA" referredColumn="422D2EE2-BAD7-73F1-C705-657F4158527F"/>
+</associations>
+</Column>
+<Column name="designation" id="6A332C0B-6BC5-2E95-CA1D-AC8B464E8F5F">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>00BB2961-1E42-6A1A-75FB-80936B92800B</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>067B48BB-2F68-26EE-7323-AC32C29EE957</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>8B3224B2-251E-9CD9-5E96-7738AAF0ADBA</dependOnForeignKeyID>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D4AD90D-EDCE-D112-C12F-6B89B453E693" name="dean_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>EE73B38E-4516-568B-D5DD-EB000B82DCC5</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71D31AF5-AA8E-F6C2-F393-2B7B1943EB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A320AB67-422F-3F58-A22D-83BFE99EB475" name="professor_of_dean">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>FEFF9AD4-FD85-79B1-4A4C-1F8C1017150B</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71D31AF5-AA8E-F6C2-F393-2B7B1943EB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

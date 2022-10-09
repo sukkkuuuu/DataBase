@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="00BD0CF4-833D-5BD0-0937-E6AA1CAFCDC9" name="professor">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>C498E092-D398-6B56-5DB7-F36D8514A1E2</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="422D2EE2-BAD7-73F1-C705-657F4158527F">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>9FDB5082-456B-65D2-BE72-C989AAB509C7</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="info" id="C4F8CD73-B8E3-0428-C71E-EE3BC84383E0">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>E3C5263E-9525-9166-C490-408A36F24DDE</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>F8B1A69D-FAC6-4711-0C5F-09A248AC1A13</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="major" id="E925D858-DFB1-7A60-860F-F59A75277581">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>456E7F78-7C81-2853-DCAF-C6688F94F32F</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="office" id="EEB6214B-B5D6-30CB-112D-43BAB4966770">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>E9D4CBFB-5A56-43C6-49A4-FA4BF0B3F5DE</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>31E53E37-055F-D889-5D9D-3416996BC305</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="departmentName" id="99428E8D-4D92-7F6D-0DF1-4E0C59478F38">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>5C6CEDF2-206F-E739-E1A5-40FD09E01D98</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AADC261B-66DD-E5EA-C1E0-DFC748E902CB" referredColumn="B20B0D60-F406-3800-9AE7-048F448F9A1E"/>
+</associations>
+</Column>
+</columns>
+<nestedColumns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<nestedColumn name="info.name" id="EF867231-4EBF-D4A7-8D61-727AD92BBF51">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>16059889-A5B2-5378-730A-7CC94EB24D3C</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<parentObject>C4F8CD73-B8E3-0428-C71E-EE3BC84383E0</parentObject>
+<structAttributeID>D59FCB76-C595-CCC8-E38B-EB15E07EA6AB</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="info.phoneNo" id="64402F39-2154-0FA3-1C58-5FA3026A37CC">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>8B2DAA52-695B-B1F3-B7D3-3B68029D8737</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>C4F8CD73-B8E3-0428-C71E-EE3BC84383E0</parentObject>
+<structAttributeID>1062E9AE-1CD8-8A8D-776B-72D69C47DCFB</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>E9E103DE-C538-C197-0FE0-B0BF10C501D7</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="info.phoneNo.phone" id="40C8B4A7-A46F-F70D-8B05-F1ACF1E407EF">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>4C9760A4-F7B8-C93E-DC83-C15B0E32BA2D</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>64402F39-2154-0FA3-1C58-5FA3026A37CC</parentObject>
+<structAttributeID>A2642FBA-E4FF-5744-1824-9167D60A1F92</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>392D1AEF-A190-CE78-F0A6-A6A90D70904F</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="info.phoneNo.home" id="AFB597C3-B6B2-1B8C-0B63-37E3AB84B7BD">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>2C948779-A100-DE85-D2A9-AEA89121F237</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>64402F39-2154-0FA3-1C58-5FA3026A37CC</parentObject>
+<structAttributeID>65EF9692-50AE-D742-271E-D496BEEB1A32</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>392D1AEF-A190-CE78-F0A6-A6A90D70904F</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="info.phoneNo.office" id="8463BC32-76F4-7C21-4105-EE0509D1B5F6">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>7E9967C9-21C6-8920-19EC-4E33D47BACAD</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>64402F39-2154-0FA3-1C58-5FA3026A37CC</parentObject>
+<structAttributeID>3D7AC158-A165-9FF6-5E45-EFD0CE44BC8C</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>392D1AEF-A190-CE78-F0A6-A6A90D70904F</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="info.homeAddress" id="AEE1EF62-2828-CCDF-349E-2F564B20AC28">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>C27EB55A-8178-CB21-CDE6-49A43E90D7B2</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>C4F8CD73-B8E3-0428-C71E-EE3BC84383E0</parentObject>
+<structAttributeID>F4104D4F-2179-2204-2FC7-62C38E5E34B1</structAttributeID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<domain>31E53E37-055F-D889-5D9D-3416996BC305</domain>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+</nestedColumns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B51A62D-9BB4-E24D-5EE0-979B3BB7F347" name="professor_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>7341E3D2-CE1F-5EFD-F2C6-9FD3CF9FD492</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="422D2EE2-BAD7-73F1-C705-657F4158527F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB1181EF-1DBB-26E8-59F2-5323F1C8DC3D" name="department_of">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>F47EC670-E3FC-801E-F0F3-8AF4C751F60C</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99428E8D-4D92-7F6D-0DF1-4E0C59478F38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="9A2C59E6-312A-C0FF-3FD2-086A954E2065" name="subject">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>F04979DD-9F5A-0CEE-4ACF-B3537EA65494</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="classId" id="C5FD09FD-D82A-4363-B986-745988C4C446">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>86CBF1DE-6016-D34A-EB80-38DCA8D7E188</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>56DA70DC-0590-2EBD-AEF6-CE21D91334B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="64D4028E-113C-BFBA-1B68-2D7080E4BE7E">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>7DDDD4E1-74EE-5CC8-4392-85DB3AC8DF1F</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="learntime" id="FE0FFCD8-9E6D-B41B-A717-98102F36D0CF">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>60C5BA21-66BF-5C14-3ED4-B1B00ED37127</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aId" id="FF4A6CB0-79BE-5D9E-355C-269EA2F34F4A">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>3039FD22-0C35-E33A-6819-50E32A841433</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4F786834-FB18-8765-3E32-D6959001E775" referredColumn="5EC28825-14E9-BBE8-C970-F4C9CE697B18"/>
+</associations>
+</Column>
+<Column name="pId" id="5414CF2E-B3E4-1096-9233-97C1B9FB72B9">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>83A091C4-41C6-CA27-16B3-7382300D69F8</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0A4BA17-F4D2-6D05-9AF8-019B6AD320D3" referredColumn="422D2EE2-BAD7-73F1-C705-657F4158527F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93C0EE46-4E4C-B50C-0186-FDEC286A63FA" name="subject_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>3F0CA107-E7F0-A5D6-C111-FF4FAE4DA833</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64D4028E-113C-BFBA-1B68-2D7080E4BE7E"/>
+<colUsage columnID="C5FD09FD-D82A-4363-B986-745988C4C446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2CA0C85-4B3F-522C-94E7-1EEFA6553ED1" name="professor_of_subject">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>670815AC-1FB6-0911-D7A9-186B16FBF473</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5414CF2E-B3E4-1096-9233-97C1B9FB72B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2BBAB5E-69C5-28D1-2EF8-903223869DBA" name="subject_of">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>4029A584-2722-5067-C881-D294F98F972E</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF4A6CB0-79BE-5D9E-355C-269EA2F34F4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="5EC5108C-3E80-DECA-D702-A6D3D576A9A1" name="Special_Lectures">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:36:57 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<ordsAlias>view_25</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    class.cname,
+    class.cno,
+    subject.name,
+    lecturetime.days,
+    lecturetime.starttime
+FROM
+    subject,
+    class,
+    time,
+    lecturetime
+WHERE
+        subject.name = class.sname
+    AND subject.name = time.sname
+    AND lecturetime.id = time.lid
+    AND ( lecturetime.days LIKE '월'
+          OR lecturetime.days LIKE '수'
+          OR lecturetime.days LIKE '금' )
+    AND lecturetime.starttime >= 6
+    AND lecturetime.starttime <= 9]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cname" id="6FE15CFC-835E-30A8-3883-3AF93569DE96">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:41:25 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>cname</headerAlias>
+<reference>false</reference>
+<referencedColumn>3EFF2E57-78F1-2D53-5110-35C002D1671A</referencedColumn>
+<table>25B6BA7A-E7BE-7CB0-F821-254B62FD1B5B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cno" id="A999642F-D8F4-46E0-3148-7F736651FA4C">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:41:25 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (20)</dataType>
+<headerAlias>cno</headerAlias>
+<reference>false</reference>
+<referencedColumn>F855CD52-F6DB-B6AA-CD55-E8D0FA7E8661</referencedColumn>
+<table>25B6BA7A-E7BE-7CB0-F821-254B62FD1B5B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="name" id="7ABCA126-6A9C-59C6-198E-D6A40C449690">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:41:25 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>name</headerAlias>
+<reference>false</reference>
+<referencedColumn>64D4028E-113C-BFBA-1B68-2D7080E4BE7E</referencedColumn>
+<table>9A2C59E6-312A-C0FF-3FD2-086A954E2065</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="days" id="DFEE1696-55CC-FE77-3624-008FC7D08AC9">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:41:25 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>days</headerAlias>
+<reference>false</reference>
+<referencedColumn>90A08ED4-3FF1-AC65-66A6-3EB0AF005C93</referencedColumn>
+<table>7E09CC82-6506-ADF1-70E3-B2AE503D44F8</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="starttime" id="F98E3BB0-DF55-63C9-EFE4-FCDAA48F675B">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:41:25 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>starttime</headerAlias>
+<reference>false</reference>
+<referencedColumn>19D1A60B-B0DC-8BD9-98B7-0787E5C19582</referencedColumn>
+<table>7E09CC82-6506-ADF1-70E3-B2AE503D44F8</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9A2C59E6-312A-C0FF-3FD2-086A954E2065">
+<container>true</container>
+<tableName>subject</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="25B6BA7A-E7BE-7CB0-F821-254B62FD1B5B">
+<container>true</container>
+<tableName>class</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="50358860-1FC2-CC48-6CA0-551B79715D05">
+<container>true</container>
+<tableName>time</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7E09CC82-6506-ADF1-70E3-B2AE503D44F8">
+<container>true</container>
+<tableName>lecturetime</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3EFF2E57-78F1-2D53-5110-35C002D1671A">
+<columnName>CName</columnName>
+<tableName>class</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F855CD52-F6DB-B6AA-CD55-E8D0FA7E8661">
+<columnName>CNo</columnName>
+<tableName>class</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="64D4028E-113C-BFBA-1B68-2D7080E4BE7E">
+<columnName>name</columnName>
+<tableName>subject</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="90A08ED4-3FF1-AC65-66A6-3EB0AF005C93">
+<columnName>days</columnName>
+<tableName>lecturetime</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="19D1A60B-B0DC-8BD9-98B7-0787E5C19582">
+<columnName>starttime</columnName>
+<tableName>lecturetime</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CABE9A5A-4681-B6BF-BF87-1BAA0D0CAD03">
+<columnName>SName</columnName>
+<tableName>class</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7CE2FD4B-6416-7F03-F956-2CE5AD464747">
+<columnName>LId</columnName>
+<tableName>time</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="71757377-607D-D94D-4129-720AC8090AAA">
+<columnName>SName</columnName>
+<tableName>time</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1DFA9507-A3E2-DB81-709D-0B57644FF767">
+<columnName>id</columnName>
+<tableName>lecturetime</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

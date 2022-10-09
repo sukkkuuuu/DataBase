@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="56CC06A6-AA19-992D-8345-1106F2E92228" name="Dept_info">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:29:30 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<ordsAlias>view_24</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    department.name,
+    COUNT(DISTINCT professor.id)         AS 교수수,
+    COUNT(DISTINCT teachingassistant.id) AS 조교수
+FROM
+    department,
+    professor,
+    teachingassistant
+WHERE
+        department.name = professor.departmentname
+    AND department.name = teachingassistant.departmentname
+GROUP BY
+    department.name
+HAVING
+    COUNT(DISTINCT professor.id) >= 2]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="name" id="591AFFBE-2182-7858-A0CD-0FA60A3D95E6">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:29:45 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>name</headerAlias>
+<reference>false</reference>
+<referencedColumn>B20B0D60-F406-3800-9AE7-048F448F9A1E</referencedColumn>
+<table>9EA39DB6-DB66-CF1D-A7FE-9D7FE31C4CB1</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="교수수" id="766041FB-ED23-E576-142B-7323234716AD">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:29:45 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>교수수</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>교수수</headerAlias>
+<expression>COUNT(DISTINCTprofessor.id)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="조교수" id="84AF66F1-7371-847A-014D-DB2EB8B77FE5">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:29:45 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>조교수</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>조교수</headerAlias>
+<expression>COUNT(DISTINCTteachingassistant.id)</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9EA39DB6-DB66-CF1D-A7FE-9D7FE31C4CB1">
+<container>true</container>
+<tableName>department</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="00BD0CF4-833D-5BD0-0937-E6AA1CAFCDC9">
+<container>true</container>
+<tableName>professor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C682F288-2233-9593-13FE-D58171747F89">
+<container>true</container>
+<tableName>teachingAssistant</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B20B0D60-F406-3800-9AE7-048F448F9A1E">
+<columnName>name</columnName>
+<tableName>department</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5EC28825-14E9-BBE8-C970-F4C9CE697B18">
+<columnName>id</columnName>
+<tableName>teachingAssistant</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="422D2EE2-BAD7-73F1-C705-657F4158527F">
+<columnName>id</columnName>
+<tableName>professor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DAEE1A5B-1A44-4005-DE8B-8131862064B9">
+<columnName>departmentName</columnName>
+<tableName>teachingAssistant</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="99428E8D-4D92-7F6D-0DF1-4E0C59478F38">
+<columnName>departmentName</columnName>
+<tableName>professor</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

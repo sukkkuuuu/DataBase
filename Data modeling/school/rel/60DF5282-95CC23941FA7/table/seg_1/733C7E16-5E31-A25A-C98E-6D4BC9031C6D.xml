@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="733C7E16-5E31-A25A-C98E-6D4BC9031C6D" name="student_of_class">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="StdId" id="2EC18BC9-3E0C-4749-D144-BFAA86BA7896">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CFF5B80-BD5B-DAE1-804C-29CBDCCA2EE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B5BA39C-9E3B-5AAB-F599-09B76328CD7B" referredColumn="E3056D5E-4296-CD74-4ACD-3B58BF238BC2"/>
+</associations>
+</Column>
+<Column name="SName" id="B32AD42B-FDEB-B573-BCDD-212B90BB594E">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7C3271F0-A552-319F-FDAC-7DC6126CFC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A28EA5BF-8719-AD7A-3E0F-975C35B4534C" referredColumn="64D4028E-113C-BFBA-1B68-2D7080E4BE7E"/>
+</associations>
+</Column>
+<Column name="SclassId" id="E074CC90-0ABE-ED2C-4602-29F68279F299">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>56DA70DC-0590-2EBD-AEF6-CE21D91334B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A28EA5BF-8719-AD7A-3E0F-975C35B4534C" referredColumn="C5FD09FD-D82A-4363-B986-745988C4C446"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B54AD4ED-9E4B-5B2E-D823-B48E5D9C97BE" name="student_of_class_PK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<ownerDesignName>school</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EC18BC9-3E0C-4749-D144-BFAA86BA7896"/>
+<colUsage columnID="B32AD42B-FDEB-B573-BCDD-212B90BB594E"/>
+<colUsage columnID="E074CC90-0ABE-ED2C-4602-29F68279F299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5354B7A-1C3B-76C9-8A89-DFD648A18CFD" name="student_of_class_student_FK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>0E4419D3-69D3-3CA8-08AF-9987EDA38FA8</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EC18BC9-3E0C-4749-D144-BFAA86BA7896"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B757DDD-EEED-09CF-FBBA-9444542ACC8E" name="student_of_class_subject_FK">
+<createdBy>zxqwa</createdBy>
+<createdTime>2022-10-07 12:23:39 UTC</createdTime>
+<generatorID>0E4419D3-69D3-3CA8-08AF-9987EDA38FA8</generatorID>
+<ownerDesignName>school</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B32AD42B-FDEB-B573-BCDD-212B90BB594E"/>
+<colUsage columnID="E074CC90-0ABE-ED2C-4602-29F68279F299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
